@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omar Tamer - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Omar Tamer
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            omartamerasu04@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +201064405800
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/IMG-8674.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Omar Tamer! 
+          </h1>
+          <p>
+            I am a driven and ambitious individual who thrives on tackling new challenges and pushing the boundaries of what is possible."
+"With a passion for creativity and innovation, I constantly seek opportunities to learn and grow, leveraging my skills and knowledge to make a meaningful impact.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+        </div>  
+
+        <!-- Add more skills here -->
+        
+        <div class="skill">
+          <img src="html_finalprojimages/java.png">
+          <h6>Java</h6>
+        </div>
+
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/c-logo.png"/>
+          <h6>C++</h6>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/python-logo.png"/>
+          <h6>Python</h6>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Bookstore Application</h3>
+            <ul>
+              <li>
+                A web-based platform designed to enhance the experience of browsing and purchasing books, tailored to users' preferences. This application combines modern technology with user-centric design, providing seamless navigation, personalized recommendations, and intuitive management of shopping and wishlist data.
+                </li>
+            </ul>
+            <a href="https://github.com/MuhammedSherifff/BookStoreDEPI.git" class="gitLink">-> GitHub Repo</a>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Real-Time Chat Application</h3>
+            <ul>
+     <li>
+       A fully functional real-time chat platform built to facilitate instant communication. Designed for individuals and groups, the application features seamless messaging, robust authentication, and a dynamic user experience.
+      </li>        
+                          </ul>
+                          <a href="https://github.com/Ahmed3656/iChat" class="gitLink">-> GitHub Repo</a>
+                        </div>
+          <hr>
+          <div class="project-card">
+            <h3>Car Price Predictor</h3>
+            <ul>
+              <li>This project is an end-to-end application designed to predict car prices based on user inputs. The goal was to create a seamless and user-friendly platform integrating machine learning and web technologies.</li>
+            </ul>
+            <a href="https://github.com/titoo04/Car_price_predictor" class="gitLink">-> GitHub Repo</a>
+
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Omar's attention to detail, problem-solving abilities, and commitment to excellence make him an invaluable asset to any project. He consistently delivers high-quality work that exceeds expectations and ensures client satisfaction.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Omar's dedication to delivering high-quality work is unmatched. He consistently goes above and beyond to ensure client satisfaction and project success."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Working with Omar is a pleasure. His attention to detail and problem-solving abilities make him an invaluable asset to any project."
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here-->Thanks for leaving Your Feedback!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
